@@ -4,9 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:300,400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+    <title>Creative - Contact</title>
 </head>
-<body>
+<body class="contactPage">
+
+    <!-- HEADER -->
     
+     <header class="contact">
+        <div class="wrapper">    
+            <nav class="mainNav clearfix">
+                <ul class="mainNav left">
+                    <li><a href="./home.html" title="Home">Home</a></li>
+                    <li><a href="./blog.html" title="Blog">Blog</a></li>
+                    <li><a href="#" title="Portfolio">Portfolio</a></li>
+                    <li class="hide"><i class="fas fa-search"></i></li>
+                    <li class="hide"><i class="fas fa-shopping-bag"></i></li>
+                </ul>
+
+                <ul class="mainNav right">
+                    <li><a href="#" title="Shop">Shop</a></li>
+                    <li><a href="./contaxct.html" title="Contact">Contact</a></li>
+                    <li><a href="#" class="icon"><i class="fas fa-search"></i></a></li>
+                    <li>
+                        <div class="container">
+                            <a href="#" class="icon"><i class="fas fa-shopping-bag"></i>
+                                <div class="badge">
+                                    <p>2</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1>Creative</h1>
+        </div>
+    </header>
+
+    <!-- HELLO -->
+
+    <section class="hello">
+        <div class="wrapper">
+            <div class="container">
+                <div class="rule3"></div>
+                <h2>Contact us</h2>
+            </div>
+    </section>
+
+    <!-- CONTACT DETAILS -->
+
+    <section class="contactDetails">
+        <div class="wrapper">
+            <div class="contactUs">
+                <h3>Contact details</h3>
+                <p>If you need any help, please contact us or send us an email or go to our forum. We are sure that you can receive our reply as soon as possible.</p>
+                <ul class="clearfix">
+                    <li>
+                        <div class="method byPhone">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h5>Phone</h5>
+                            <p>Phone 01: 123, 456 7890</p>
+                            <p>Phone 02: 345 678 9101</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="method inPerson">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h5>Address</h5>
+                            <p>6591 Orchard Street, Toronto, Ontario</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="method byEmail">
+                            <i class="fas fa-envelope"></i>
+                            <h5>Email</h5>
+                            <p>contact@creative.com</p>
+                            <p>info@creative.com</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="sendMessage">
+                <h3>Get in touch with us</h3>
+                <p>If you have any question, please don't hesitate to send us a message.</p>
+
+                <form action="POST" class="main sendMessage">
+                    <input type="text" name="name" class="name" id="name" placeholder="Enter your name..." required><input type="email" name="email" class="email" id="email" placeholder="youremail@domain.com" required><input type="text" name="subject" class="subject" id="subject" placeholder="Subject (Optional)">
+                
+                    <textarea name="commentToPost" class="commentToPost" id="commentToPost" placeholder="Here goes your comment" required></textarea>
+                
+                    <input type="submit" value="Send Message">
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GOODBYE -->
+
+    <section class="goodbye">
+    </section>
+
+    <!-- FOOTER  -->
+
+    <footer>
+        <div class="wrapper clearfix">
+            <div class="contactInfo">
+                <h4>Contact us</h4>
+                <ul class="info">
+                    <p>6591 Orchard Street, Toronto, Ontario</p>
+                    <p>Email: <a href="mailto:contact@creative.com">contact@creative.com</a></p>
+                    <p>Phone 01: <a href="tel+11234567890">123 456 7890</a></p>
+                    <p>Phone 02: <a href="tel:+13456789101">345 678 9101</a></p>
+                    <p>Fax: 643 6543 898</p>
+                </ul>
+                <ul class="social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a>
+                </ul>
+            </div>
+            
+            <div class="recentPosts">
+                <h4>Recent posts</h4>
+                <ul>
+                    <li>Conversion hackathon partner</li>
+                    <li>Network channels entrepreneur</li>
+                    <li>Return on investment creative</li>
+                    <li>Assets interaction design venture</li>
+                    <li>Infographic learning curve
+                    </ul>
+                </div>
+                
+                <div class="newsletter">
+                    <h4>Subscribe now</h4>
+                    <p>Signup for emails and notifications below.</p>
+                    <form method="post" id="subscribe" class="subscribe" name="subscribe" autocomplete="off">
+                        <label for="email">Email</label> <input type="email" id="email" class="email" name="email" placeholder="Enter your email"><button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    </form>
+                </div>
+                
+            </div>
+            
+            <div class="heel">
+                <h6>Creative Agency</h6>
+            </div>
+    </footer>
+
 </body>
 </html>

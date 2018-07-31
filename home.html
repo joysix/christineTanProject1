@@ -4,62 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Creative - Home</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:300,400,400i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link href="./style.css" rel="stylesheet">
+    <title>Creative - Home</title>
     
 </head>
-<body>
+<body class="homePage">
     
     <!-- HEADER -->
-    <header class="latete">
+
+    <header class="home">
         <div class="wrapper">    
-            <nav class="main-nav clearfix">
-                <ul class="mnav--left">
+            <nav class="mainNav clearfix">
+                <ul class="mainNav left">
                     <li><a href="./home.html" title="Home">Home</a></li>
                     <li><a href="./blog.html" title="Blog">Blog</a></li>
-                    <li><a href="/" title="Portfolio">Portfolio</a></li>
+                    <li><a href="#" title="Portfolio">Portfolio</a></li>
                     <li class="hide"><i class="fas fa-search"></i></li>
-                    <li class="hide"><i class="fas fa-shopping-bag"></i></li>
                 </ul>
-                <ul class="mnav--right">
-                    <li><a href="/" title="Shop">Shop</a></li>
-                    <li><a href="./contact.html" title="Contact">Contact</a></li>
-                    <li><a href="/" class="icon"><i class="fas fa-search"></i></a></li>
+
+                <ul class="mainNav right">
+                    <li><a href="#" title="Shop">Shop</a></li>
+                    <li><a href="./contaxct.html" title="Contact">Contact</a></li>
+                    <li><a href="#" class="icon"><i class="fas fa-search"></i></a></li>
                     <li>
                         <div class="container">
-                            <a href="/" class="icon"><i class="fas fa-shopping-bag"></i>
+                            <a href="#" class="icon"><i class="fas fa-shopping-bag"></i>
                                 <div class="badge">
-                                    <h5>2</h5>
+                                    <p>2</p>
                                 </div>
                             </a>
                         </div>
                     </li>
-                        
                 </ul>
             </nav>
+
             <h1>Creative</h1>
         </div>
-        <div class="rule1"></div>
+        <div class="hRule1"></div>
     </header>
 
     <!-- SERVICES -->
 
     <section class="services">
         <div class="wrapper">
-            <div class="branding">
+            <figure class="branding">
                 <img src="./assets/home-2.jpeg">
                 <div class="mark">
                     <img src="./assets/home-circle-text.png">
                 </div>
-            </div>
+            </figure>
+
             <div class="container clearfix">
-                <div class="service sv--left">
+                <div class="service left">
                     <h4>Branding</h4>
                     <p>Venture first mover advantage incubator metrics /focus backing business-to-consumer.</p>
                 </div>
-                <div class="service sv--right">
+            
+                <div class="service right">
                     <h4>Design & Develop</h4>
                     <p>Venture first mover advantage incubator metrics /focus backing business-to-consumer.</p>
                 </div>
@@ -71,12 +74,14 @@
 
     <section class="slides">
         <div class="wrapper clearfix">
-            <div class="arrow arrow--left">
+            <button class="arrow left">
                 <i class="fas fa-angle-left fa-2x"></i>
-            </div>
-            <div class="arrow arrow--right">
+            </button>
+
+            <button class="arrow right">
                 <i class="fas fa-angle-right fa-2x"></i>
-            </div>
+            </button>
+            
             <div class="slide">
                 <div class="round">
                     <img src="./assets/home-3.jpeg">
@@ -92,135 +97,144 @@
 
     <section class="promises">
         <div class="wrapper clearfix">
-            <div class="promise clearfix">
-                <div class="circle">
-                    <i class="fas fa-magic"></i>
-                </div>
-                <div class="text">
-                    <h4>Unique Design</h4>
-                    <p>Twitter validation first mover advantage /advisor angel investor beta churn rate /low hanging fruit burn.</p>
-                </div>
-            </div>
-            <div class="promise clearfix">
-                <div class="circle">
-                    <i class="fas fa-map-pin"></i>
-                </div>
-                <div class="text">
-                    <h4>SEO Marketing</h4>
-                    <p>Twitter validation first mover advantage /advisor angel investor beta churn rate /low hanging fruit burn.</p>
-                </div>
-            </div>
-            <div class="promise clearfix">
-                <div class="circle">
-                    <i class="fas fa-desktop"></i>
-                </div>
-                <div class="text">
-                    <h4>Retina Ready</h4>
-                    <p>Twitter validation first mover advantage /advisor angel investor beta churn rate /low hanging fruit burn.</p>			
-                </div>
-            </div>
-            <div class="promise clearfix">
-                <div class="circle">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <div class="text">
-                    <h4>eCommerce Ready</h4>
-                    <p>Twitter validation first mover advantage /advisor angel investor beta churn rate /low hanging fruit burn.</p>
-                </div>
-            </div>
-            <div class="promise clearfix">
-                <div class="circle">
-                    <i class="fas fa-sliders-h"></i>
-                </div>
-                <div class="text">
-                    <h4>Advanced Options</h4>
-                    <p>Twitter validation first mover advantage /advisor angel investor beta churn rate /low hanging fruit burn.</p>
-                </div>
-            </div>
-            <div class="promise clearfix">
-                <div class="circle">
-                    <i class="far fa-smile"></i>
-                </div>
-                <div class="text">
-                    <h4>Customizable</h4>
-                    <p>Twitter validation first mover advantage /advisor angel investor beta churn rate /low hanging fruit burn.</p>
-                </div>
-            </div>
+            <ul>
+                <li class="promise clearfix">
+                    <div class="circle">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="promiseText">
+                        <h4>Unique Design</h4>
+                        <p>Twitter validation first mover advantage /advisor angel investor beta churn rate /low hanging fruit burn.</p>
+                    </div>
+                </li>
+                <li class="promise clearfix">
+                    <div class="circle">
+                        <i class="fas fa-map-pin"></i>
+                    </div>
+                    <div class="promiseText">
+                        <h4>SEO Marketing</h4>
+                        <p>Twitter validation first mover advantage /advisor angel investor beta churn rate /low hanging fruit burn.</p>
+                    </div>
+                </li>
+                <li class="promise clearfix">
+                    <div class="circle">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="promiseText">
+                        <h4>Retina Ready</h4>
+                        <p>Twitter validation first mover advantage /advisor angel investor beta churn rate /low hanging fruit burn.</p>			
+                    </div>
+                </li>
+                <li class="promise clearfix">
+                    <div class="circle">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="promiseText">
+                        <h4>eCommerce Ready</h4>
+                        <p>Twitter validation first mover advantage /advisor angel investor beta churn rate /low hanging fruit burn.</p>
+                    </div>
+                </li>
+                <li class="promise clearfix">
+                    <div class="circle">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <div class="promiseText">
+                        <h4>Advanced Options</h4>
+                        <p>Twitter validation first mover advantage /advisor angel investor beta churn rate /low hanging fruit burn.</p>
+                    </div>
+                </li>
+                <li class="promise clearfix">
+                    <div class="circle">
+                        <i class="far fa-smile"></i>
+                    </div>
+                    <div class="promiseText">
+                        <h4>Customizable</h4>
+                        <p>Twitter validation first mover advantage /advisor angel investor beta churn rate /low hanging fruit burn.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
-            
+ 
     <!-- TEAM -->
 
     <section class="team">
         <div class="rule2"></div>
+
         <div class="wrapper clearfix">
             <h3>Meet our team</h3>
-            <div class="container two-wide">
-                <div class="valign members">
+            <div class="container twoWide">
+                <div class="members vAlign">
                     <h4>Team players</h4>
                     <p>Pitch client interaction design ownership disruptive leverage prototype /conversion. Deployment validation gen-z disruptive paradigm shift /churn rate niche market graphical user interface.</p>
                 </div>
             </div>
-            <div class="member">
+
+            <figure class="member">
                 <img src="./assets/home-5.jpeg">
-            </div>
-            <div class="member">
+            </figure>
+            
+            <figure class="member">
                 <img src="./assets/home-6.jpeg">
-            </div>
-            <div class="member">
+            </figure>
+            
+            <figure class="member">
                 <img src="./assets/home-7.jpeg">
-            </div>
-            <div class="member">
+            </figure>
+            
+            <figure class="member">
                 <img src="./assets/home-8.jpeg">
-            </div>
-            <div class="member">
+            </figure>
+            
+            <figure class="member">
                 <img src="./assets/home-9.jpeg">
-            </div>
-            <div class="container one-wide">
-                <div class="valign work">
+            </figure>
+            
+            <div class="oneWide container">
+                <div class="vAlign work">
                     <h4>Want to work with us !</h4>
                 </div>
             </div>
-        </diV>
+        </div>
     </section>
 
     <!-- CONTACT -->
 
-    <section class="contactz">
-        <div class="fullbleed clearfix">
-            <div class="contact contact--left">
+    <section class="connection clearfix">
+            
+            <div class="connect left">
                 <h3>Drop us a line</h3>
                 <p>Pitch client interaction design ownership disruptive leverage prototype /conversion. Deployment validation gen-z disruptive paradigm shift /churn rate niche market graphical user interface.</p>
-                <button>View portfolio</button>
+                <a href="#">View portfolio</a>
             </div>
-            <div class="contact contact--right">
+            
+            <figure class="connect right">
                 <img src="./assets/home-10.jpeg">
-            </div>
-        </div>
+            </figure>
+
     </section>
     
-
     <!-- FOOTER  -->
 
-    <footer class="lepied">
+    <footer>
         <div class="wrapper clearfix">
-            <div class="ledoigt contactinfo">
+            <div class="contactInfo">
                 <h4>Contact us</h4>
                 <ul class="info">
                     <p>6591 Orchard Street, Toronto, Ontario</p>
-                    <p>Email: contact@creative.com</p>
-                    <p>Phone 01: 123 456 7890</p>
+                    <p>Email: <a href="mailto:contact@creative.com">contact@creative.com</a></p>
+                    <p>Phone 01: <a href="tel+11234567890">123 456 7890</a></p>
+                    <p>Phone 02: <a href="tel:+13456789101">345 678 9101</a></p>
                     <p>Fax: 643 6543 898</p>
-                    <p>Phone 02: 345 678 9101</p>
                 </ul>
                 <ul class="social">
-                    <li><i class="fab fa-facebook-f"></i>
-                    <li><i class="fab fa-twitter"></i>
-                    <li><i class="fab fa-instagram"></i>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a>
                 </ul>
             </div>
             
-            <div class="ledoigt recentposts">
+            <div class="recentPosts">
                 <h4>Recent posts</h4>
                 <ul>
                     <li>Conversion hackathon partner</li>
@@ -231,18 +245,18 @@
                     </ul>
                 </div>
                 
-                <div class="ledoigt newsletter">
+                <div class="newsletter">
                     <h4>Subscribe now</h4>
                     <p>Signup for emails and notifications below.</p>
-                    <form method="post" class="subscribe" autocomplete="off" name="subs">
-                        <input type="email" name="email" class="subscribe" placeholder="Enter your email"><button type="submit" class="subscribe"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    <form method="post" id="subscribe" class="subscribe" name="subscribe" autocomplete="off">
+                        <label for="email">Email</label> <input type="email" id="email" class="email" name="email" placeholder="Enter your email"><button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
                     </form>
                 </div>
                 
             </div>
             
             <div class="heel">
-                <h5>Creative Agency</h5>
+                <h6>Creative Agency</h6>
             </div>
     </footer>
 
