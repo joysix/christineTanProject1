@@ -2,4 +2,4 @@
 *.psd
 design
 *.zip
-assets
+.vscode

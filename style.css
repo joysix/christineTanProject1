@@ -7,6 +7,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
+
+
 /* GLOBAL */
 
 *  {
@@ -139,10 +141,7 @@ header > .wrapper {
     font-size: 1.1rem;
 }
 
-.mainNav a:hover { 
-    text-decoration: line-through;
-    /* background-color: #c3dab7;  */
-}
+.mainNav a:hover { text-decoration: line-through; }
 
 .mainNav a.icon:hover {
     color: #c3dab7;
@@ -173,6 +172,7 @@ header .container {
 
 .badge > p {
     font-size: 0.8rem;
+    line-height: 1.2rem;
 }
 
 header > .wrapper > h1 {
@@ -192,9 +192,7 @@ footer {
     background-color: #333;
 }
 
-footer > .wrapper {
-    padding: 100px 0px;
-}
+footer > .wrapper { padding: 100px 0px; }
 
 footer h4 {
     margin-bottom: 25px;
@@ -211,9 +209,7 @@ footer ul {
 
 footer p { line-height: 1.6rem; }
 
-footer a:hover {
-    color: #c3dab7;
-}
+footer a:hover { color: #c3dab7; }
 
 .contactInfo, 
 .recentPosts, 
@@ -254,9 +250,9 @@ footer a:hover {
 }
 
 button[type="submit"] {
-    margin: 0px;
     width: 36px;
     height: 36px;
+    margin: 0px;
     color: #333;
     font-size: 1.1rem;
     font-weight: 600;
@@ -266,11 +262,12 @@ button[type="submit"] {
 
 .heel {
     width: 100%;
-    padding: 60px 0px;;
+    padding: 60px 0px;
     color: #ddd;
     text-align: center;
     border-top: 0.25px solid #444;
 }
+
 .heel > h6 {
     font-size: 1.0rem;
     font-weight: 400;
@@ -278,7 +275,10 @@ button[type="submit"] {
 }
 
 
+
+
 /* HOMEPAGE */
+
 
 /* header */
 
@@ -392,14 +392,13 @@ header.home {
 }
 
 .promises > .wrapper {
+    width: 50%;
     margin: 0 0 0 auto;
     padding: 150px 0;
-    width: 50%;
 }
 
 .promise {
-    width: calc();
-    max-width: 275px;
+    width: 275px;
     padding: 7.5px;
     margin: 20px 10px 20px 5px;
     float: left;
@@ -467,8 +466,8 @@ header.home {
 }
 
 .team > .wrapper > .container {
-    padding: calc(100% / 4 - 20px) 0 0 0;
     margin: 10px;
+    padding: calc(100% / 4 - 20px) 0 0 0;
     background-color: #f6f6f6;
     position: relative;
 }
@@ -480,19 +479,16 @@ header.home {
 
 .twoWide { width: calc(50% - 20px); }
 
-.oneWide { width: calc(100% / 4 - 20px); }
+.oneWide, 
+.member { width: calc(100% / 4 - 20px); }
 
 .vAlign {
     margin: 0;
     padding: 20px;
     position: absolute;
-    overflow-x: scroll;
 }
 
-.member {
-    width: calc(100% / 4 - 20px);
-    margin: 10px;
-}
+.member { margin: 10px; }
 
 .member img { width: 100%; }
 
@@ -509,7 +505,7 @@ header.home {
 }
 
 
-/* connection */
+/* connect */
 
 .connection {
     background-color: #c3dab7;
@@ -554,13 +550,13 @@ header.home {
     transition: all .3s;
 }
 
-.connect > a:hover {
-    padding: 10px 50px;
-}
+.connect > a:hover { padding: 10px 50px; }
+
 
 
 
 /* BLOG */
+
 
 /* header */
 
@@ -586,9 +582,7 @@ header.blog {
 
 /* post */
 
-.post > .wrapper {
-    padding: 100px 0 0 0;
-}
+.post > .wrapper { padding: 100px 0 0 0; }
 
 .post > .wrapper > h2 {
     padding-bottom: 10px;
@@ -641,7 +635,9 @@ header.blog {
     float: left;
 }
 
-.reference span, .ref, .post ul {
+.ref, 
+.reference span, 
+.post ul {
     color: #707070;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
@@ -680,6 +676,7 @@ header.blog {
     color: #c3dab7;
 }
 
+
 /* related posts */
 
 .related .wrapper {
@@ -687,14 +684,14 @@ header.blog {
 }
 
 .related ul {
+    width: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
 }
 
 .relPost {
-    margin-right: 15px;
     width: calc((100% - 30px) / 3);
+    margin-right: 15px;
     display: block;
     float: left;
 }
@@ -727,6 +724,7 @@ a:hover .overlay {
     text-transform: uppercase;
 }
 
+
 /* read comments */
 
 .readComments * { font-family: "Montserrat", sans-serif; }
@@ -746,10 +744,10 @@ a:hover .overlay {
 }
 
 .commentText {
-    position: relative;
+    width: calc(100% - 100px);
     margin-left: 40px;
     padding: 15px;
-    width: calc(100% - 100px);
+    position: relative;
     float: left;
     background-color: #eee;
 }
@@ -790,9 +788,6 @@ a:hover .overlay {
 
 /* leave comment */
 
-/* .leaveComment > .wrapper { padding: 50px 0 100px 0; } */
-
-
 /* FORM */
 
 .main { 
@@ -830,6 +825,7 @@ a:hover .overlay {
     text-transform: uppercase;
     border: none;
     border-bottom: 2px solid #eee;
+    background-color: #fff;
 }
 
 .main input:focus,
@@ -884,7 +880,7 @@ header.contact {
     width: 100px;
     display: block;
     font-size: 4.8rem;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
@@ -898,14 +894,14 @@ header.contact {
     letter-spacing: 1px;
 }
 
-.contactUs > p {
-    width: 48%;
-}
-
 .contactUs p {
     font-size: 1.0rem;
     line-height: 1.8rem;
 }
+
+.contactUs > p { width: 380px; }
+
+.contactUs a:hover { text-decoration: underline; }
 
 .contactUs > ul {
     width: 100%;
@@ -919,10 +915,9 @@ header.contact {
 }
 
 .contactUs i {
-    font-size: 3.2rem;
     margin-bottom: 10px;
+    font-size: 3.2rem;
 }
-
 
 .method {
     width: auto;
@@ -931,9 +926,7 @@ header.contact {
     border-right: 1px solid #eee;
 }
 
-li:last-child .method {
-    border: none;
-}
+li:last-child .method { border: none; }
 
 .method > h5 {
     margin-bottom: 10px;
@@ -950,5 +943,4 @@ li:last-child .method {
     padding-bottom: 35.833%;
     background: transparent url('./assets/contact-2.jpeg') top;
     background-size: 100%;
-    background-attachment: ; 
 }
