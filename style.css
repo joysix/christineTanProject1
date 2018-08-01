@@ -10,8 +10,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /* GLOBAL */
 
 *  {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -72,11 +72,10 @@ h6 { font-size: 1.0rem; }
 p {
     color: #707070;
     font-size: 1.1rem;
-    line-height: 1.8rem;
 }
 
 a { 
-        color: inherit;
+    color: inherit;
     text-decoration: none; 
 }
 
@@ -129,9 +128,9 @@ header > .wrapper {
     text-transform: uppercase;
 }
 
-.mainNav.left li { padding-right: 16px; }
+.mainNav.left li { padding-right: 8px; }
 
-.mainNav.right li { padding-left: 16px; }
+.mainNav.right li { padding-left: 8px; }
 
 .mainNav a {
     padding: 2px 5px;
@@ -140,7 +139,10 @@ header > .wrapper {
     font-size: 1.1rem;
 }
 
-.mainNav a:hover { background-color: #c3dab7; }
+.mainNav a:hover { 
+    text-decoration: line-through;
+    /* background-color: #c3dab7;  */
+}
 
 .mainNav a.icon:hover {
     color: #c3dab7;
@@ -170,12 +172,8 @@ header .container {
 }
 
 .badge > p {
-    padding-top: 0.5px;
     font-size: 0.8rem;
 }
-
-header .container:hover .badge,
-header .badge:hover { display: none; }
 
 header > .wrapper > h1 {
     position: absolute;
@@ -206,6 +204,7 @@ footer h4 {
 
 footer p,
 footer ul {
+    color: #ddd;
     font-size: 1.1rem;
     letter-spacing: 0.25px;
 }
@@ -297,6 +296,7 @@ header.home {
     bottom: 0;
     transform: translateY(50%);
     border-right: 0.25px solid #aaa;
+    z-index: 1;
 }
 
 
@@ -424,15 +424,20 @@ header.home {
 }
 
 .promiseText {
-    width: calc(100% - 60px);
-    margin-left: 10px;
+    width: calc(100% - 70px);
+    margin-left: 20px;
     float: left;
     background: transparent;
 }
 
+.promiseText > h4 {
+    margin-bottom: 10px;
+}
+
 .promiseText p {
     color: #707070;
-    font-size: 1.0rem;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
 }
 
 
@@ -542,14 +547,15 @@ header.home {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     border: 0;
     background-color: #fff;
+    transition: all .3s;
 }
 
 .connect > a:hover {
-    color: #fff;
-    background-color: #333;
+    padding: 10px 50px;
 }
 
 
@@ -611,7 +617,7 @@ header.blog {
     border-bottom: 1px solid #eee;
 }
 
-.reference h4 { padding-top: 10px; }
+.reference h4 { padding: 10px 0 4px 0; }
 
 .byline {
     width: 50%;
@@ -635,13 +641,17 @@ header.blog {
     float: left;
 }
 
-span, .post ul {
-    margin: 0;
+.reference span, .ref, .post ul {
+    color: #707070;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
-    
 }
-.post li { display: inline; }
+
+.reference a:hover {
+    text-decoration: underline;
+}
+
+.post li { display: inline-block; }
 
 .reference li::after { content: ",\ "; }
 
@@ -664,19 +674,24 @@ span, .post ul {
 
 .share li { 
     padding: 0 5px;
-    font-size: 1.3rem; }
+    font-size: 1.4rem; }
 
+.share a:hover {
+    color: #c3dab7;
+}
 
 /* related posts */
 
 .related .wrapper {
     padding: 50px 0; 
 }
+
 .related ul {
     margin: 0;
     padding: 0;
     width: 100%;
 }
+
 .relPost {
     margin-right: 15px;
     width: calc((100% - 30px) / 3);
@@ -686,13 +701,30 @@ span, .post ul {
 
 .relPost:last-child { margin-right: 0; }
 
-.relPost .image { margin-bottom: 15px; }
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+a:hover .overlay {
+    background-color: #c3dab780;
+}
+
+.relPost .image { 
+    margin-bottom: 15px;
+    position: relative;
+    display: block;
+}
 
 .relPost img { width: 100%; }
 
-.relPost > .date {
-    text-transform: uppercase;
+.datePosted {
     font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
 }
 
 /* read comments */
@@ -724,6 +756,12 @@ span, .post ul {
 
 .commentText button {
     background: transparent;
+}
+
+.commentText button:hover {
+    position: relative;
+    top: 1px;
+    left: 1px;
 }
 
 .speechTick {
@@ -798,7 +836,13 @@ span, .post ul {
 .main textarea:focus,
 .main input[type=submit]:hover {
     color: #333;
-    border-bottom-color: #707070;
+    border-bottom: 2px solid #707070;
+}
+
+.main input[type=submit]:hover {
+    position: relative;
+    top: 2px;
+    left: 2px;
 }
 
 
@@ -810,6 +854,7 @@ header.contact {
     min-height: 101px;
     background-color: #fff;
 }
+
 
 /* hello */
 
@@ -843,6 +888,7 @@ header.contact {
     letter-spacing: 1px;
 }
 
+
 /* contact details */
 
 .contactDetails h3 {
@@ -854,6 +900,11 @@ header.contact {
 
 .contactUs > p {
     width: 48%;
+}
+
+.contactUs p {
+    font-size: 1.0rem;
+    line-height: 1.8rem;
 }
 
 .contactUs > ul {
@@ -868,7 +919,7 @@ header.contact {
 }
 
 .contactUs i {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     margin-bottom: 10px;
 }
 
@@ -876,7 +927,7 @@ header.contact {
 .method {
     width: auto;
     height: 100%;
-    padding: 20px 40px;
+    padding: 25px 50px;
     border-right: 1px solid #eee;
 }
 
@@ -892,8 +943,7 @@ li:last-child .method {
 }
 
 
-
-/* EXIT */
+/* goodbye */
 
 .goodbye {
     width: 100%;
